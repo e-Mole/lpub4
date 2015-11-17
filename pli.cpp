@@ -226,6 +226,13 @@ bool Pli::initAnnotationString()
     titles << "^VEX-2 Smart Cable\\s+([0-9].*)$";
     titles <<"^VEX-2 Rubber Belt\\s+([0-9].*)Diameter";
 
+    // Bitbeam parts annotations added by Tomas on 17 November 2015
+   titles <<"^Bitbeam Beam  1 x\\s+(\\d+)\\s*$";
+   titles <<"^Bitbeam Beam  2 x\\s+(\\d+)\\s*$";
+   titles <<"^Bitbeam Beam 10 x\\s+(\\d+)\\s*$";
+   titles <<"^Bitbeam Beam 12 x\\s+(\\d+)\\s*$";
+   titles <<"^Bitbeam Wheel\\s+(\\d+)\\s*$";
+   titles <<"^Bitbeam Axle\\s+(\\d+)\\s*.*$";
   }
   return true;
 }
